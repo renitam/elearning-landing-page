@@ -1,20 +1,25 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Button, Overlay } from './styles/global';
+import { Nav, Button, Logo } from './styles/global';
+import skilled from './images/logo-dark.svg';
 
 function App() {
   return (
     <div className="App">
+      <Nav>
+        <Logo src={skilled} alt="skilled logo" />
+        <Button>Get Started</Button>
+      </Nav>
       <header className="App-header">
-        <Overlay><Button>Get Started</Button></Overlay>
+        
 
         <h1>Maximize skill, minimize budget</h1>
 
         Our modern courses across a range of in-demand skills will give you the 
         knowledge you need to live the life you want.
 
-        Get Started
+        <Button>Get Started</Button>
 
         Check out our most popular courses!
 
@@ -43,7 +48,7 @@ function App() {
         without outside investment.
         Get Started
 
-        Get Started
+        <Button>Get Started</Button>
       </header>
     </div>
   );
