@@ -1,13 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Button } from './styles/Shared';
+import { Button, Overlay } from './styles/global';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Button>Get Started</Button>
+        <Overlay><Button>Get Started</Button></Overlay>
 
         <h1>Maximize skill, minimize budget</h1>
 
