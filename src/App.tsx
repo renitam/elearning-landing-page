@@ -1,18 +1,18 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Nav, Button, Logo } from './styles/global';
+import Nav from './components/Nav';
+import { Button, Navbar, Logo } from './styles/global';
 import skilled from './images/logo-dark.svg';
 
 function App() {
   return (
     <div className="App">
-      <Nav>
+      <Navbar>
         <Logo src={skilled} alt="skilled logo" />
         <Button>Get Started</Button>
-      </Nav>
+      </Navbar>
       <header className="App-header">
-        
 
         <h1>Maximize skill, minimize budget</h1>
 

@@ -1,18 +1,28 @@
 import styled from 'styled-components';
 
-export const Nav = styled.nav`
+export const Navbar = styled.nav`
     margin: 0;
     padding: 29px 165px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (max-width: 768px) {
+        padding: 16px;
+    }
 `;
 
 export const Logo = styled.img`
     width: 114px;
-    height: 30px;
+    height: 45px;
     margin: 0;
     padding: 0;
+    object-fit: contain;
+
+    @media screen and (max-width: 768px) {
+        width: 89px;
+        height: 35px;
+    }
 `;
 
 export const Button = styled.button`
@@ -42,5 +52,10 @@ export const Button = styled.button`
         opacity: 0.3;
         transition: 0.3s linear;
         cursor: pointer;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 140px;
+        height: 48px;
     }
 `;
