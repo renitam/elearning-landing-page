@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Nav from './components/Nav';
-import { Button, Navbar, Logo } from './styles/global';
+import { Button, Navbar, Logo, Button2 } from './styles/global';
 import skilled from './images/logo-dark.svg';
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
         Our modern courses across a range of in-demand skills will give you the 
         knowledge you need to live the life you want.
 
-        <Button>Get Started</Button>
+        <Button2>Get Started</Button2>
 
         Check out our most popular courses!
 

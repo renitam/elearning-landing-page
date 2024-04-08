@@ -1,5 +1,37 @@
 import styled from 'styled-components';
 
+export const HeadingXL = styled.h1`
+    font-family: 'Plus Jakarta Sans Extra Bold', sans-serif;
+    font-size: 56px;
+    line-height: 70px;
+    margin: 0;
+    padding: 0;
+`;
+
+export const HeadingL = styled.p`
+    font-family: 'Plus Jakarta Sans Extra Bold', sans-serif;
+    font-size: 40px;
+    line-height; 51px;
+    margin: 0;
+    padding: 0;
+`;
+
+export const HeadingM = styled.h2`
+    font-family: 'Plus Jakarta Sans Extra Bold', sans-serif;
+    font-size: 32px;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+`;
+
+export const HeadingS = styled.h3`
+    font-family: 'Plus Jakarta Sans Extra Bold', sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0;
+    padding: 0;
+`
+
 export const Navbar = styled.nav`
     margin: 0;
     padding: 29px 165px;
@@ -36,8 +68,10 @@ export const Button = styled.button`
     width: 167px;
     height: 56px;
     border-radius: 28px;
+    z-index: 0;
 
-    &:after {
+    // behind the button lies a #fff background that appears on hover
+    &:before {
         position: absolute;
         background: #ffffff;
         opacity: 1;
@@ -46,11 +80,12 @@ export const Button = styled.button`
         bottom: 0;
         left: 0;
         border-radius: 28px;
+        z-index: 1;
     }
-    
+
     &:hover {
         opacity: 0.3;
-        transition: 0.3s linear;
+        transition: opacity 0.3s linear;
         cursor: pointer;
     }
 
@@ -58,4 +93,8 @@ export const Button = styled.button`
         width: 140px;
         height: 48px;
     }
+`;
+
+export const Button2 = styled(Button)`
+    background: linear-gradient(#f02aa6, #ff6f48);
 `;
