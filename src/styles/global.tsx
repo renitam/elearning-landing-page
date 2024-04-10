@@ -1,36 +1,79 @@
 import styled from 'styled-components';
 
+export const BodyM = styled.p`
+    font-family: 'Plus Jakarta Sans Medium';
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+`;
+
+export const BodyS = styled.p`
+    font-family: 'Plus JakartaSans Bold';
+    font-size: 16px;
+    line-height: 28px;
+    text-align: left;
+`;
+
 export const HeadingXL = styled.h1`
     font-family: 'Plus Jakarta Sans Extra Bold', sans-serif;
     font-size: 56px;
     line-height: 70px;
-    margin: 0;
-    padding: 0;
+    text-align: left;
 `;
 
 export const HeadingL = styled.p`
     font-family: 'Plus Jakarta Sans Extra Bold', sans-serif;
     font-size: 40px;
     line-height; 51px;
-    margin: 0;
-    padding: 0;
+    text-align: left;
 `;
 
 export const HeadingM = styled.h2`
     font-family: 'Plus Jakarta Sans Extra Bold', sans-serif;
     font-size: 32px;
     line-height: 40px;
-    margin: 0;
-    padding: 0;
+    text-align: left;
 `;
 
 export const HeadingS = styled.h3`
     font-family: 'Plus Jakarta Sans Extra Bold', sans-serif;
     font-size: 24px;
     line-height: 28px;
-    margin: 0;
-    padding: 0;
+    text-align: left;
 `
+
+export const IntroHeading = styled(HeadingXL)`
+    margin: 0;
+    padding: 39px 165px;
+
+    @media screen and (max-width: 768px) {
+        font-size: 40px;
+        line-height: 51px;
+        padding: 16px;
+    }
+`
+
+export const CardHeading = styled(HeadingS)`
+    margin: 0;
+    padding: 32px;
+
+    @media screen and (max-width: 768px) {
+        padding: 28px 24px 0px;
+        font-size: 20px;
+        line-height: 1;
+        height: 35px;
+    }
+`;
+
+export const Body = styled(BodyM)`
+    color: #83869a;
+    padding: 16px;
+
+    @media screen and (max-width: 768px) {
+        font-size: 16px
+        height: 35px;
+    }
+`;
 
 export const Navbar = styled.nav`
     margin: 0;
@@ -58,9 +101,9 @@ export const Logo = styled.img`
 `;
 
 export const Button = styled.button`
-    color: #ffffff;
     font-family: 'Plus Jakarta Sans Bold', sans-serif;
     font-size: 18px;
+    color: #ffffff;
     margin: 0;
     padding: 0;
     border: none;
@@ -68,7 +111,7 @@ export const Button = styled.button`
     width: 167px;
     height: 56px;
     border-radius: 28px;
-    z-index: 0;
+    z-index: 1;
 
     // behind the button lies a #fff background that appears on hover
     &:before {
@@ -80,7 +123,7 @@ export const Button = styled.button`
         bottom: 0;
         left: 0;
         border-radius: 28px;
-        z-index: 1;
+        z-index: 0;
     }
 
     &:hover {

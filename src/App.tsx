@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Nav from './components/Nav';
-import { Button, Navbar, Logo, Button2 } from './styles/global';
+import { Button, Navbar, Logo, Button2, HeadingXL } from './styles/global';
 import skilled from './images/logo-dark.svg';
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
       </Navbar>
       <header className="App-header">
 
-        <h1>Maximize skill, minimize budget</h1>
+        <HeadingXL>Maximize skill, minimize budget</HeadingXL>
 
         Our modern courses across a range of in-demand skills will give you the 
         knowledge you need to live the life you want.
