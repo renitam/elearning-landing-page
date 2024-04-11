@@ -123,12 +123,11 @@ export const Button = styled.button`
         bottom: 0;
         left: 0;
         border-radius: 28px;
-        z-index: 0;
+        transition: all 0.3s ease;
     }
 
-    &:hover {
+    &:hover:before {
         opacity: 0.3;
-        transition: opacity 0.3s linear;
         cursor: pointer;
     }
 
